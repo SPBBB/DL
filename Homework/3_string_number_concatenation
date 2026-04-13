@@ -1,10 +1,10 @@
-# predict the result of the following code
-name = ”Alice” # a special character ” seems to be used like "" but it is not confirmed
-age = 20
-Print(name + “is” + age + “years old.”) # "is" is used as reserved word, Print() is not print(), age is integer.
+# # predict the result of the following code
+# name = ”Alice” # a special character ” seems to be used like "" but it is not confirmed
+# age = 20
+# Print(name + “is” + age + “years old.”) # "is" is used as reserved word, Print() is not print(), age is integer.
       
 
-# fix the code 
-name = "Alice"
-age = 20
-print(name + "is" + str(age) + "years old.")
+# # fix the code 
+# name = "Alice"
+# age = 20
+# print(name + "is" + str(age) + "years old.")

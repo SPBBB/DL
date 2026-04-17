@@ -126,4 +126,5 @@ while True :
         print(f"Celsius = {temp_c}")
     if choice == "3" : 
         print("Program terminated")
-        break  
+        break   
+# 번외로 발견한 거 : Indentaiton by Tab key is quite different from different context(Where the Tab is pressed)

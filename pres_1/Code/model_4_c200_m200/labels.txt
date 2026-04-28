@@ -1,2 +1,2 @@
-0 muffin
-1 chihuahua
+0 Awake
+1 Drowsy

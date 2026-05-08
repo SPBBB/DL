@@ -29,25 +29,24 @@
 # lab.1
 
 ## 1 [Sum of input integers]
-"""
+
 # input and split str into list of flural str 
-a = input('Enter a single line of integers: ')
-b = a.split(',')
+line = input('Enter a single line of integers: ') # one-line input form, ex: 3,4,5,6,7,8,9
+raw_cut = line.split(',')
 
 # preprocees the list and spontaneously find the sum 
 sum = 0
-for i in b : 
-    sum += int(i.strip())
+for i in raw_cut : 
+    sum += int(i.strip()) # deleting space (not affecting to data of 'raw_cut') 
 print('sum is',sum)
-"""
+
 
 
 ## 2  [Energy Meter CSV (sum per house)]
 
 
 # input CSV file and split pairs 
-"""
-CSV = input('Enter one-line CSV file: ')
+CSV = input('Enter one-line CSV file: ') # one-line input form(e.g.): A,2.5;B,2.0;C,4.0;C,5.0;A,2.3;B,1.5
 house_value = CSV.split(';') # ['house,value', 'house,values' , . .]
 
 # print(CSV)
@@ -60,6 +59,13 @@ for i in house_value :
     house_value_strip[0] = house_value_strip[0].strip()
     house_value_strip[1] = house_value_strip[1].strip()
     list.append(house_value_strip) # list = [ [house, value] , [house,value] , . .]
+
+# if csv file is well-ordered(not needed to use strip()) : 
+"""
+list = []
+for i in house_value : 
+    list.append(i.split(','))
+"""
 
 # change type of values from str to float
 for i in range(len(list)) : 
@@ -87,7 +93,6 @@ finalText = finalText[:-2]
 # print(label_list)
 print(finalText)
 
-"""
 
 ## 3. [Random movie recommendation] 
 """
@@ -117,8 +122,10 @@ integer_list = [int(x.strip()) for x in integers]
 find_second_max(integer_list)
 """
 
-## 5. [Matrix Transpose] 혹시 이거 인풋을 one-line input()으로 받아야 하나요 
+## 5. [Matrix Transpose] 혹시 이거 인풋을 one-line input()으로 받아야 하나요 > size 정해야되는데 어뜨케 원라인 인풋을 받아 n, m , ~~ 하면 돼지 않?음?
 """
+# for n in range(1,6) : 
+#     for m in range(1, 6) :
 Origin_matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
 # assign the size of Transposed matrix

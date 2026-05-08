@@ -36,8 +36,7 @@
 # dict().pop(key) > return the value of the argumented key
 # c,b = dict().popitem()
 
-jjj = {'chunk' : 1, 'ff' : " faf", 123 : '2er'}
-print(jjj)
+
 """
 ooo = {}
 >>> ooo
@@ -100,9 +99,10 @@ AttributeError: 'dict' object has no attribute 'claer'. Did you mean: 'clear'?
 """
 # dict().popitem() 맨뒤? 팝하고 return key, value
 
+# split word and count 
 counts = dict()
 print('Enter a line of text:')
-line = input('')
+line = input('') # the clown ran after the car and the car ran into the tent and the tent fell down on the clown and the car 
 words = line.split()
 print('Words:', words)
 

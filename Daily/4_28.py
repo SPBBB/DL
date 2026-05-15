@@ -95,7 +95,7 @@ print(finalText)
 
 
 ## 3. [Random movie recommendation] 
-"""
+
 # input movies by one-line str and make it movies' list
 movies = input("Enter movie list: ").split(',')
 movie_list = []
@@ -106,10 +106,10 @@ for i in movies :
 import random 
 randint = random.randint(0, len(movie_list)-1)
 print("Movie recommendation:",movie_list[randint])
-"""
+
 
 ## 4. [Find the Second Largest Number]
-"""
+
 # define a funtion that find second max from integer list and print, retrun it.
 def find_second_max(num_list) : 
     num_list.remove(max(num_list))
@@ -120,10 +120,10 @@ def find_second_max(num_list) :
 integers = input("Enter a single line of integers: ").split(',')
 integer_list = [int(x.strip()) for x in integers]
 find_second_max(integer_list)
-"""
+
 
 ## 5. [Matrix Transpose] 혹시 이거 인풋을 one-line input()으로 받아야 하나요 > size 정해야되는데 어뜨케 원라인 인풋을 받아 n, m , ~~ 하면 돼지 않?음?
-"""
+
 # for n in range(1,6) : 
 #     for m in range(1, 6) :
 Origin_matrix = [[1,2,3],[4,5,6],[7,8,9]]
@@ -139,10 +139,10 @@ for i in range(len(Origin_matrix)) :
 # print result
 input("Original matrix = ")
 print("Transposed matrix =",Transposed_matrix)
-"""
 
-##6. [Data Cleaning: Filter Invalid Temperature Values] 
-"""
+
+## 6. [Data Cleaning: Filter Invalid Temperature Values] 
+
 # input data
 data_list = input("Enter a single line of temp. measurement: ").split(',')
 
@@ -174,4 +174,3 @@ for i in before_clean :
 # print result
 print("Before cleaning:", before_clean)
 print("After cleaning:", After_clean)
-"""

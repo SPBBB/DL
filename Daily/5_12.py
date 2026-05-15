@@ -3,7 +3,7 @@
 ## Lab2. Dict. 
 
 # 1. [Parse colon pairs to dictionary]
-"""
+
 line = input("Enter input text: ") # ex: 'name:alice age:21 dept:AI'
 
 key_value = line.split() # [ 'key:value', 'key:value', . .]
@@ -14,10 +14,10 @@ for i in key_value:
     line_dict[dict_item[0]] = dict_item[1]
     
 print(line_dict)
-"""
+
 
 # 2. [Group numbers by parity]
-"""
+
 num_line = input("Enter your number set: ") # ex: '3 4 5 6 7 8'
 nums = num_line.split() # ['3','4','5', .. , '8']
 
@@ -28,13 +28,13 @@ for i in range(len(nums)) :
 parity_dic = {'even':[],'odd':[]}
 
 for n in nums : 
-    if n%2 == 0 : # even 
+    if n%2 == 0 : # if even 
         parity_dic['even'].append(n)
     else : 
         parity_dic['odd'].append(n)
 
 print(parity_dic)
-"""
+
 
 # 3. [Address Book] : Build a command-line address book that lets the user manage contacts
 

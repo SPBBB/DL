@@ -1,2 +1,0 @@
-0 Awake
-1 Drowsy

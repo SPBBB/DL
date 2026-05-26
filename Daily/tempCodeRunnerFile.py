@@ -1,1 +1,2 @@
-3 4 5 6 7 8
+    pw = input("Enter a new password (letters and digits only): ")
+    print(pw.isalnum())
